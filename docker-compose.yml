@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: drone-db
+    build:
+      context: ./db
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+    ports:
+      - "7777:5432"
+    deploy:
+      resources:
+        limits:
+          memory: 2GB
+        reservations:
+          memory: 1GB
+    networks:
+      - drone-network
+#
+#  drone-app:
+#        container_name: drone-app
+#        build:
+#            context: ./web
+#        ports:
+#            - "8888:8080"
+#        networks:
+#            - drone-network
+
+volumes:
+  database-data:
+  log_volume:
+
+networks:
+    drone-network:
+        name: drone-bridge
+        driver: bridge

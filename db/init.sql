@@ -1,0 +1,48 @@
+BEGIN;
+
+CREATE SCHEMA drone;
+--
+--CREATE TABLE Drone (
+--    id SERIAL,
+--    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    update_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    serial_number(100) varchar NOT NULL,
+--    model varchar NOT NULL,
+--    battery_capacity numeric NOT NULL,
+--    state numeric NOT NULL,
+--    weight_limit numeric NOT NULL
+--);
+--
+--CREATE TABLE Unit (
+--    id SERIAL,
+--    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    update_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    unit varchar(5) NOT NULL DEFAULT 'gr',
+--);
+--
+--CREATE TABLE Models (
+--    id SERIAL,
+--    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    update_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    unit varchar(5) NOT NULL DEFAULT 'Lightweight',
+--);
+--
+--CREATE TABLE State (
+--    id SERIAL,
+--    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    update_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    unit varchar(5) NOT NULL DEFAULT 'IDLE,',
+--);
+--
+--CREATE TABLE Medication (
+--    id SERIAL,
+--    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    update_date TIMESTAMP NOT NULL DEFAULT NOW(),
+--    name varchar(5) NOT NULL,
+--    weight number NOT NULL,
+--    code varchar NOT NULL,
+--    image varchar NOT NULL,
+--);
+--
+--
+--COMMIT;
